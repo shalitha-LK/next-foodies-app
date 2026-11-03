@@ -13,7 +13,16 @@ function MainHeader() {
         <Image src={logoImage} priority />
         NextLavel Food
       </Link>
-      <NavLink />
+      <nav className={classes.nav}>
+        <ul>
+          <li>
+            <NavLink prefix={"/meals"}> Browse Meals</NavLink>
+          </li>
+          <li>
+            <NavLink prefix={"/community"}> Foodies Community</NavLink>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }

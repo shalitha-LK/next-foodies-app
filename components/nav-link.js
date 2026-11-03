@@ -3,23 +3,12 @@ import React from "react";
 import classes from "./nav-link.module.css";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-function NavLink() {
+function NavLink({ prefix, children }) {
   const path = usePathname();
   return (
-    <nav className={classes.nav}>
-      <ul>
-        <li>
-          <Link href="/meals" className={path.startsWith("/meals") ? classes.active : undefined}>
-            Browse Meals
-          </Link>
-        </li>
-        <li>
-          <Link href="/community" className={path.startsWith("/community") ? classes.active : undefined}>
-            Foodies Community
-          </Link>
-        </li>
-      </ul>
-    </nav>
+    <Link href={prefix} className={path.startsWith(prefix) ? `${classes.active} ${classes.link}` : `${classes.link}`}>
+      {children}
+    </Link>
   );
 }
 
