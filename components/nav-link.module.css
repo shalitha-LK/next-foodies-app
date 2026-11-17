@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+=======
+.active {
+  background: linear-gradient(90deg, #ff8a05, #f9b331);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+>>>>>>> 7de4658aa591055963155418245c2892eafb4f5d
 .link {
   text-decoration: none;
   color: #ddd6cb;
@@ -13,11 +22,4 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 18px rgba(248, 190, 42, 0.8);
-}
-
-.active {
-  background: linear-gradient(90deg, #ff8a05, #f9b331);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
