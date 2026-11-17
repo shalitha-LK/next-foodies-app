@@ -13,7 +13,6 @@ function MainHeader() {
         <Image src={logoImage} priority />
         NextLavel Food
       </Link>
-<<<<<<< HEAD
 
       <nav className={classes.nav}>
         <ul>
@@ -22,15 +21,6 @@ function MainHeader() {
           </li>
           <li>
             <NavLink href={"/community"}> Foodies Community</NavLink>
-=======
-      <nav className={classes.nav}>
-        <ul>
-          <li>
-            <NavLink prefix={"/meals"}> Browse Meals</NavLink>
-          </li>
-          <li>
-            <NavLink prefix={"/community"}> Foodies Community</NavLink>
->>>>>>> 7de4658aa591055963155418245c2892eafb4f5d
           </li>
         </ul>
       </nav>
