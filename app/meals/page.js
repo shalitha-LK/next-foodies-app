@@ -1,20 +1,24 @@
 import React from "react";
 import classes from "./page.module.css";
 import Link from "next/link";
+
+import MealdGrid from "@/components/meals/meals-grid";
+
 function MealsPage() {
   return (
     <>
       <header className={classes.header}>
         <h1>
-          Delicious meal, created
-          <span className={classes.highlight}></span>
+          Delicious meals, created <span className={classes.highlight}>by you</span>
         </h1>
-        <p>Chose your faviourte recipe and cook it your self it is and fun.</p>
+        <p>Choose your favorite recipe and cook it yourself. It is easy and fun!</p>
         <p className={classes.cta}>
-          <Link href="/meals/share">Share Your Faviroute recipe</Link>
+          <Link href={"/meals/share"}>Share your faviourite recipe.</Link>
         </p>
       </header>
-      <main className={classes.main}></main>
+      <main className={classes.main}>
+        <MealdGrid meals={[]} />
+      </main>
     </>
   );
 }
