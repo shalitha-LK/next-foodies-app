@@ -10,7 +10,7 @@ function MainHeader() {
   return (
     <header className={classes.header}>
       <Link className={classes.logo} href="/">
-        <Image src={logoImage} priority />
+        <Image src={logoImage} alt="logoImage" priority />
         NextLavel Food
       </Link>
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import classes from "./page.module.css";
 import Link from "next/link";
 
@@ -17,7 +17,9 @@ function MealsPage() {
         </p>
       </header>
       <main className={classes.main}>
-        <MealdGrid meals={[]} />
+        <Suspense fallback={<p className={classes.loading}>Fetching meals...</p>}>
+          <MealdGrid />
+        </Suspense>
       </main>
     </>
   );
